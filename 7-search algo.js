@@ -109,23 +109,151 @@ let prompt=require("prompt-sync")()
 
 
 // question 4 find the first occurance. target 2
-let arr=[1,2,2,2,3,4,5]
-let t=2
-let st=0
-let end=arr.length-1
-let index=-1
+// let arr=[1,2,2,2,3,4,5]
+// let t=2
+// let st=0
+// let end=arr.length-1
+// let index=-1
+// while(st<=end){
+//     let mid=Math.floor((st+end)/2)
+//     if(arr[mid]===t){
+//         index=mid
+//         end=mid-1
+//     }
+//     else if(arr[mid]<t){
+//         st=mid+1
+//     }
+//     else end=mid-1
+// }
+// console.log("first occurance in target2 is index",index)
+
+
+// question 5 find the last occurance .target 2
+// let arr=[1,2,2,2,3,4,5]
+// t=2
+// let st=0
+// let end=arr.length-1
+// let index=-1
+// while(st<=end){
+//     let mid=Math.floor((st+end)/2)
+//     if(arr[mid]===t){
+//         index=mid
+//         st=mid+1
+//     }
+//     else if (arr[mid]<t) st=mid+1
+//     else end=mid-1
+// }
+// console.log(` last occurance of trget 2 is index :${index}`)
+
+
+
+
+ //question6: Count how many times the target appears.target=5
+
+ //first finding first occurance
+// let arr=[2,2,2,3,4,4,5,5,5,5]
+// let t=5
+// let st=0
+// let end=arr.length-1
+// let index1=-1
+// while(st<=end){
+//     let mid=Math.floor((st+end)/2)
+//     if(arr[mid]===t){
+//         index1=mid
+//         end=mid-1
+//     }
+//     else if(arr[mid]<t) st=mid+1
+//     else end=mid-1
+// }
+// //finding last occurance
+// let st2=0
+// let end2=arr.length-1
+// let index2=-1
+// while(st2<=end2){
+//     let mid=Math.floor((st2+end2)/2)
+//     if(arr[mid]===t){
+//         index2=mid
+//         st2=mid+1
+//     }
+//     else if(arr[mid]<t) st2=mid+1
+//     else end2=mid-1
+// }
+// console.log(`number of times 5 counted in array is: ${(index2-index1)+1}`)
+
+
+
+// question 7: Find the first index where the value is greater than or equal to the target
+//target = 5
+// let arr=[2,4,4,6,8,10]
+// let t=5
+// let st=0
+// let end=arr.length-1
+// let index=-1
+// while(st<=end){
+//     let mid= Math.floor((st+end)/2)
+//      if(arr[mid]>=t){
+//         index=mid
+//         end=mid-1
+//     }
+//     else st=mid+1
+// }
+// console.log(`the index where the value is greater and equal to the target is: ${index}`)
+
+
+
+//question 8: firnd the first index where the value is greater than the target
+//target=4
+// let arr=[2,4,4,6,8,10]
+//  let t=4
+//  let st=0
+//  let end=arr.length-1
+//  let index =-1
+// while(st<=end){
+//   let mid=Math.floor((st+end)/2)
+//  if(arr[mid]>t){
+//         index=mid
+//        end=mid-1
+//     }
+//     else st=mid+1 
+// }
+// console.log(index)
+
+
+//question 9: find the floor value .target=6
+//let arr=[1,3,5,7,9]
+
+//  let t=6
+//  let st=0
+//  let end=arr.length-1
+//  let value =0
+// while(st<=end){
+//   let mid=Math.floor((st+end)/2)
+//  if(arr[mid]<=t){
+//         value=arr[mid]
+//        st=mid+1
+//     }
+//     else end=mid-1
+// }
+// console.log(value)
+// console.log(`the floor value of target 6 is :${value}`)
+
+
+
+//question 10: find the ceil value .target =6
+
+let arr=[1,3,5,7,9]
+
+ let t=6
+ let st=0
+ let end=arr.length-1
+ let value =0
 while(st<=end){
-    let mid=Math.floor((st+end)/2)
-    if(arr[mid]===t){
-        index=mid
-        end=mid-1
+  let mid=Math.floor((st+end)/2)
+ if(arr[mid]>=t){
+        value=arr[mid]
+       end=mid-1
     }
-    else if(arr[mid]<t){
-        st=mid+1
-    }
-    else end=mid-1
+    else st=mid+1
 }
-console.log("first occurance in target2 is index",index)
-
-
-
+console.log(value)
+console.log(`the ceil value of target 6 is :${value}`)
